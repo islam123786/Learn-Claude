@@ -55,18 +55,56 @@ The strategic process of dividing work between humans and AI. Ask the below Ques
 - AI tools are interactive systems that can behave differently in different contexts.
 - We need to explain how AI should behave to get the best results.
 
+---
+## Effective Prompting Techniques
 
+- Provide Context
+- Offer examples
+- Specify output contraints
+- Break down complex tasks into steps.
+- Give the AI space to think
+- Define roles(Ex UI desing expert, Architect)
 
+Add the below to the prompt to give the thinking space:
+"Before answering, please think through this problem carefully. Consider the different factors involved, potential constraints, and various approaches before recommending the best solution."
 
+*Secret Weapon:* Ask the AI for the help with prompting.
 
+Ask Claude the below questions:
 
+"Can you give me three different versions of this?"
+"Instead of paragraphs, present this as an interactive artifact?"
+"How confident are you about this answer?"
 
+Sometimes starting a fresh conversation gives better result.
 
+## Discernment
 
+It is the ability to critically evaluate what AI produces, how it produces it and how it behaves.
 
+### Product Discernment
+- Output Factually correct.
+- Appropriate for audience.
+- Well structured.
+- Meets Requirement.
 
+### Process Discernment
+- Logical Error
+- Lapse in attention
+- Inappropriate steps
+- Getting stuck in small detail
+- Trapped in circular reasoning
 
+### Performance Discernment
+- Is the communication style of AI with User appropriate?
+- Is the information at the right level?
+- Is response to feedback appropriate?
+- Is the interaction efficient?
 
+### Feedback and correction
+- Clearly explain what and why it is a problem.
+- Provide concrete suggestions for the improvement.
+- Revising your instructions or examples.
 
 
 
