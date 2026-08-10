@@ -1,4 +1,4 @@
-# Introduction to AI Fluency
+# Part 1 Introduction to AI Fluency
 AI Fluency means interacting with AI system in ways that are Effective, Efficient, Ethical and Safe.
 
 ## AI Fluency Framework
@@ -106,7 +106,35 @@ It is the ability to critically evaluate what AI produces, how it produces it an
 - Provide concrete suggestions for the improvement.
 - Revising your instructions or examples.
 
+---
+## Diligence
+- Take Responsibility
+- Transparent and Accountable
+- Consider broader questions? Who will use the output, Is it safe, what is the repercussions of it?
 
+### Creation Diligence
+- The AI systems that we use.
+- How we work with them.
+- The impact that come from the interaction. (Data protection policy?)
+
+### Transparency Diligence : Communicating the accurate interaction with relevant stakeholders
+- Who is the right stakeholder
+- How to communicate or give clarity about AI interactions
+- Level of detail required?
+
+### Deployment Diligence : Taking responsibility of AI generated output.
+- Verify Facts
+- check biases
+- Ensure accuracy
+
+### Ethical Frameworks
+- Have a personal guidelines in place
+- Have an Organizational level policy on AI usage
+- Professional standards
+- Adopt Industry best practices.
+
+---
+# Part 2 Building with Claude API
 
 
 
