@@ -137,9 +137,9 @@ It is the ability to critically evaluate what AI produces, how it produces it an
 # Part 2 Building with Claude API
 
 
+## Prompt eval workflow
 
-
-
+<img width="485" height="848" alt="image" src="https://github.com/user-attachments/assets/916e75a6-116d-4e92-89bf-3ae8de0303c5" />
 
 
 
