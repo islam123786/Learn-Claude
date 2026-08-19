@@ -1,0 +1,32 @@
+[
+  {
+    "task": "Create a JSON configuration file for an AWS Lambda function that processes S3 bucket events, with environment variables for the bucket name and region",
+    "format": "json",
+    "solution_criteria": "Valid JSON with Lambda function configuration, S3 event source mapping, and environment variables section"
+  },
+  {
+    "task": "Write a Python function that extracts the AWS account ID and resource type from an ARN string",
+    "format": "python",
+    "solution_criteria": "Function correctly parses ARN format (arn:aws:service:region:account-id:resource) and returns both components"
+  },
+  {
+    "task": "Create a regular expression pattern that matches valid AWS S3 bucket names (3-63 characters, lowercase letters, numbers, and hyphens only, cannot start or end with hyphen)",
+    "format": "regex",
+    "solution_criteria": "Regex correctly validates S3 bucket naming rules and rejects invalid names"
+  },
+  {
+    "task": "Write a Python function that converts an ISO 8601 timestamp from AWS CloudWatch logs into a Unix timestamp (seconds since epoch)",
+    "format": "python",
+    "solution_criteria": "Function correctly parses ISO 8601 format and converts to Unix timestamp integer"
+  },
+  {
+    "task": "Create a JSON IAM policy document that allows EC2 describe operations on all instances and allows terminating instances with a specific tag",
+    "format": "json",
+    "solution_criteria": "Valid IAM policy JSON with correct Action, Resource, and Condition statements using tag-based conditions"
+  },
+  {
+    "task": "Write a regular expression to validate AWS access key IDs (format: AKIA followed by 16 alphanumeric uppercase characters)",
+    "format": "regex",
+    "solution_criteria": "Regex correctly matches the AKIA prefix and validates the exact length and character requirements"
+  }
+]
