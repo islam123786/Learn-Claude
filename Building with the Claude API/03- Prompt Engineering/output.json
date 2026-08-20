@@ -1,0 +1,172 @@
+[
+  {
+    "output": "```json\n[\n  \"Kant's categorical imperative\",\n  \"Deontological ethics\",\n  \"Consequentialist ethics\",\n  \"Utilitarian ethics\",\n  \"Rational duty\",\n  \"Enlightenment philosophy\",\n  \"Kantian universalism\",\n  \"Hegelian dialectics\",\n  \"German idealism\",\n  \"Marx's historical materialism\",\n  \"Phenomenological traditions\",\n  \"Noumenal realm\",\n  \"Thing-in-itself\",\n  \"Post-Kantian epistemology\",\n  \"Subject-object dichotomy\",\n  \"Quantum mechanics\",\n  \"Constructivist philosophy of science\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Kant's categorical imperative represents a pivotal departure from consequentialist ethical frameworks, establishing morality as grounded in rational duty rather than outcomes. This deontological approach emerged during the Enlightenment, challenging the utilitarian calculus that dominated eighteenth-century thought. The tension between Kantian universalism and Hegelian dialectics subsequently shaped nineteenth-century German idealism, influencing Marx's historical materialism and later phenomenological traditions. Contemporary scholars debate whether Kant's noumenal realm\u2014the thing-in-itself beyond human perception\u2014can be reconciled with post-Kantian epistemologies that reject the subject-object dichotomy, particularly in light of developments in quantum mechanics and constructivist philosophy of science."
+      },
+      "solution_criteria": [
+        "Output is a valid JSON array of strings",
+        "Includes all major philosophical concepts, historical periods, and philosophical movements mentioned in the passage",
+        "Topics are extracted as discrete, recognizable concepts rather than full phrases"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a humanities passage containing abstract philosophical concepts and historical references"
+    },
+    "score": 10,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is valid JSON containing only strings with topics, no extra commentary, and nothing else in the response. It meets secondary criteria by including all major philosophical concepts (categorical imperative, deontological ethics, consequentialist ethics, utilitarian ethics, noumenal realm, thing-in-itself, subject-object dichotomy), historical periods (Enlightenment), and philosophical movements (German idealism, phenomenological traditions, historical materialism, constructivist philosophy of science) mentioned in the passage. Topics are appropriately granular and recognizable. The extraction is thorough and accurate with only negligible stylistic considerations that don't impact quality."
+  },
+  {
+    "output": "```json\n[\n  \"Bioethics\",\n  \"Environmental policy\",\n  \"Climate-related health disparities\",\n  \"Green infrastructure\",\n  \"Air pollution\",\n  \"Respiratory diseases\",\n  \"Cardiovascular conditions\",\n  \"Environmental justice\",\n  \"Resource allocation\",\n  \"Public health interventions\",\n  \"Ecosystem preservation\",\n  \"Indigenous knowledge systems\",\n  \"Scientific evidence integration\",\n  \"Carbon pricing mechanisms\",\n  \"Socioeconomic disparities\",\n  \"Economic impacts\",\n  \"Geoengineering technologies\",\n  \"Intergenerational responsibility\",\n  \"Informed consent\",\n  \"Ethical frameworks\",\n  \"Regulatory agencies\",\n  \"Global populations\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The intersection of bioethics and environmental policy has become increasingly critical in addressing climate-related health disparities. Recent studies demonstrate that communities with limited access to green infrastructure face disproportionate exposure to air pollution, exacerbating respiratory diseases and cardiovascular conditions. Simultaneously, ethical frameworks governing resource allocation must balance immediate public health interventions with long-term ecosystem preservation. Policy makers increasingly recognize that environmental justice requires integrating indigenous knowledge systems with scientific evidence, while regulatory agencies struggle to implement carbon pricing mechanisms that account for differential economic impacts across socioeconomic strata. Furthermore, the ethical implications of geoengineering technologies raise questions about intergenerational responsibility and informed consent when interventions affect global populations."
+      },
+      "solution_criteria": [
+        "Extracts all major topics spanning bioethics, environmental policy, public health, and justice dimensions",
+        "Returns output as a JSON array of strings with no additional formatting or explanations",
+        "Identifies both explicit topics (e.g., air pollution, carbon pricing) and implicit conceptual themes (e.g., environmental justice, intergenerational responsibility)"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with an interdisciplinary passage that spans multiple fields (e.g., bioethics, environmental policy)"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article, with no extra commentary, and nothing but the JSON array is provided. It successfully identifies major topics across bioethics, environmental policy, public health, and justice dimensions as required by the secondary criteria. The extraction includes both explicit topics directly mentioned in the text and implicit conceptual themes that emerge from the passage. While there are minor issues with redundancy and granularity consistency, these do not violate any stated criteria and represent only slight inefficiencies in topic selection rather than omissions or errors."
+  },
+  {
+    "output": "```json\n[\n  \"Machine learning\",\n  \"Natural language processing\",\n  \"Biomedical text mining\",\n  \"Deep learning architecture\",\n  \"Convolutional neural networks\",\n  \"Transformer-based models\",\n  \"Clinical entity extraction\",\n  \"Electronic health records\",\n  \"Medical NLP\",\n  \"Named entity recognition\",\n  \"Relationship extraction\",\n  \"Drug-adverse event relationships\",\n  \"Medical terminology disambiguation\",\n  \"Clinical domains\",\n  \"Entity recognition\",\n  \"Drug-drug interaction detection\",\n  \"Transfer learning\",\n  \"Pre-trained language models\",\n  \"Clinical NLP challenges\",\n  \"Biomedical information extraction\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study examines the intersection of machine learning and natural language processing in biomedical text mining. We developed a deep learning architecture combining convolutional neural networks with transformer-based models to extract clinical entities from electronic health records. Our approach addresses key challenges in medical NLP including named entity recognition, relationship extraction between drugs and adverse events, and the disambiguation of medical terminology across different clinical domains. The model achieved 94% F1-score on entity recognition tasks while simultaneously improving drug-drug interaction detection through transfer learning from pre-trained language models."
+      },
+      "solution_criteria": [
+        "Extracts topics at appropriate granularity, distinguishing between distinct topics (e.g., machine learning, natural language processing, biomedical text mining) while recognizing when nested concepts should be separated (e.g., neural networks as distinct from transformers, named entity recognition as distinct from relationship extraction)",
+        "Includes all major topics covered in the passage without omission",
+        "Returns output as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a short passage containing overlapping or nested topics to evaluate topic granularity"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. Regarding secondary criteria, the granularity is appropriate and well-balanced, distinguishing between related but distinct concepts. Coverage is comprehensive, capturing all major topics from machine learning fundamentals through specific NLP tasks and evaluation metrics. The main weakness is the inclusion of 2-3 entries that are either redundant with other topics or represent meta-commentary rather than distinct topics. These minor issues do not significantly detract from an otherwise strong extraction that demonstrates good understanding of topic distinction and appropriate scope."
+  },
+  {
+    "output": "```json\n[\n  \"Natural Language Processing (NLP)\",\n  \"Transformer architectures\",\n  \"BERT (Bidirectional Encoder Representations from Transformers)\",\n  \"GPT (Generative Pre-trained Transformer)\",\n  \"Machine Learning (ML)\",\n  \"Self-attention mechanism\",\n  \"Sequential data processing\",\n  \"Transfer learning\",\n  \"Pre-trained language models\",\n  \"Named Entity Recognition (NER)\",\n  \"Sentiment analysis\",\n  \"Machine translation\",\n  \"Fine-tuning language models\",\n  \"Feature engineering\",\n  \"NLP evaluation metrics\",\n  \"Computational efficiency\",\n  \"Domain-specific NLP applications\",\n  \"Deep learning architectures\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in Natural Language Processing (NLP) have been driven by transformer architectures, particularly following the introduction of BERT (Bidirectional Encoder Representations from Transformers) and GPT (Generative Pre-trained Transformer) models. These developments have significantly impacted Machine Learning (ML) applications across multiple domains. The self-attention mechanism, a core component of transformer models, enables efficient processing of sequential data. Furthermore, transfer learning approaches using pre-trained language models have reduced computational requirements for downstream tasks in Named Entity Recognition (NER), sentiment analysis, and machine translation. Recent benchmarks show that fine-tuned BERT variants outperform traditional feature-engineering approaches by 15-20% on standard evaluation metrics used in NLP research communities."
+      },
+      "solution_criteria": [
+        "Correctly identifies all major topics including both full terms and their acronyms (e.g., Natural Language Processing/NLP, BERT, GPT, Machine Learning/ML, Named Entity Recognition/NER)",
+        "Distinguishes between distinct topics rather than treating acronyms and their expansions as separate topics",
+        "Includes technical concepts and methodologies mentioned (e.g., transformer architectures, self-attention mechanism, transfer learning, fine-tuning)"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage containing acronyms and abbreviations to verify proper topic identification"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing only topics without commentary. It successfully distinguishes between acronyms and expansions (treating NLP/Natural Language Processing as one topic, not two) and identifies all major topics explicitly mentioned. However, it includes a few inferred or slightly reworded topics that weren't directly stated in the passage, which represents a minor deviation from strict extraction principles. The solution is comprehensive and well-structured, with only minor issues in topic selection precision."
+  },
+  {
+    "output": "```json\n[\n  \"Neuroimaging\",\n  \"Chronic stress exposure\",\n  \"Cortisol elevation\",\n  \"Hippocampal volume reduction\",\n  \"Memory consolidation during sleep\",\n  \"Psychological stressors\",\n  \"Cognitive decline\",\n  \"Aging populations\",\n  \"Hypothalamic-pituitary-adrenal axis\",\n  \"Negative feedback regulation\",\n  \"Mindfulness-based interventions\",\n  \"Cortisol rhythms normalization\",\n  \"Executive function\",\n  \"Stress-related cognitive disorders\",\n  \"Therapeutic applications for stress\",\n  \"Neuroendocrinology\",\n  \"Sleep-dependent memory processes\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in neuroimaging have revealed that chronic stress exposure triggers sustained elevation of cortisol levels, which correlates with reduced hippocampal volume and impaired memory consolidation during sleep. These findings suggest a mechanistic link between psychological stressors and cognitive decline, particularly in aging populations where the hypothalamic-pituitary-adrenal axis shows diminished negative feedback regulation. Furthermore, longitudinal studies demonstrate that individuals engaging in mindfulness-based interventions show normalized cortisol rhythms and improved performance on executive function tasks, indicating potential therapeutic applications for stress-related cognitive disorders."
+      },
+      "solution_criteria": [
+        "Extracts both explicit topics (stress, cortisol, neuroimaging, hippocampus, memory, sleep) and implied topics requiring inference (aging-related cognitive decline, therapeutic interventions, HPA axis dysfunction)",
+        "Returns results as a JSON array of strings",
+        "Includes at least 8 distinct topics covering the biological mechanisms, clinical implications, and intervention approaches discussed"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage containing implied topics that require inference beyond explicit keywords"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings with only topic names and no commentary. It exceeds the secondary criteria by including 17 topics (well above the minimum 8 required) and covers all three required dimensions: biological mechanisms, clinical implications, and intervention approaches. The extraction includes explicit topics (stress, cortisol, neuroimaging, hippocampus, memory, sleep, HPA axis) and inferred topics (aging-related cognitive decline, therapeutic interventions, HPA axis dysfunction). While two topics appear to be inferences not directly stated in the passage, this represents minor over-extraction rather than a deficiency. The solution demonstrates strong comprehension of the scholarly content."
+  },
+  {
+    "output": "```json\n[\n  \"Machine learning\",\n  \"Image classification\",\n  \"Neural networks\",\n  \"Classification accuracy\",\n  \"Benchmark datasets\",\n  \"Precision metrics\",\n  \"Deep learning\",\n  \"Artificial intelligence\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in machine learning have improved image classification accuracy. Neural networks now achieve 98% precision on benchmark datasets."
+      },
+      "solution_criteria": [
+        "Output is a valid JSON array of strings",
+        "All distinct topics from the passage are extracted",
+        "No extraneous or inferred topics are included"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a brief, sparse passage with minimal information to assess performance on limited input"
+    },
+    "score": 6,
+    "reasoning": "The solution provides valid JSON with a clean array of strings and successfully extracts the core topics explicitly mentioned in the passage. However, it violates the secondary criterion by including three topics that are not directly stated in the source text: 'Deep learning', 'Artificial intelligence', and arguably 'Precision metrics'. While these are related concepts, the task explicitly requires that 'no extraneous or inferred topics are included.' The passage mentions 'precision' as a metric but not 'precision metrics' as a distinct topic. This represents a meaningful deviation from the stated requirements."
+  },
+  {
+    "output": "```json\n[\n  \"Machine learning\",\n  \"Natural language processing\",\n  \"Transformer architectures\",\n  \"Sentiment analysis\",\n  \"Machine translation\",\n  \"Biomedical text mining\",\n  \"Drug discovery\",\n  \"Computer vision\",\n  \"Convolutional neural networks\",\n  \"Image segmentation\",\n  \"Medical imaging diagnostics\",\n  \"Autonomous vehicle perception\",\n  \"Reinforcement learning\",\n  \"Robotic control\",\n  \"Game-playing agents\",\n  \"Sample efficiency\",\n  \"Real-world generalization\",\n  \"Deep learning optimization\",\n  \"Feature representation learning\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in machine learning have catalyzed significant progress across multiple domains. Natural language processing models utilizing transformer architectures have achieved state-of-the-art performance in sentiment analysis and machine translation tasks, while simultaneously enabling new applications in biomedical text mining for drug discovery. Parallel developments in computer vision, particularly convolutional neural networks for image segmentation, have revolutionized medical imaging diagnostics and autonomous vehicle perception systems. Furthermore, reinforcement learning techniques have demonstrated remarkable success in robotic control and game-playing agents, though challenges remain in sample efficiency and real-world generalization. These interconnected subfields share common theoretical foundations in deep learning optimization and feature representation learning."
+      },
+      "solution_criteria": [
+        "Extracts all major topics and subtopics mentioned in the passage (e.g., machine learning, natural language processing, computer vision, reinforcement learning, and their specific applications)",
+        "Returns output as a valid JSON array of strings",
+        "Avoids duplicate entries and maintains clarity by using concise, recognizable topic names"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a dense passage from a literature review containing multiple subtopics in limited text"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a valid JSON array of strings containing topics from the article with no extra commentary. The response contains only the JSON array as required. Regarding secondary criteria, the solution extracts all major topics (machine learning, NLP, computer vision, reinforcement learning) and their specific applications comprehensively. The list avoids duplicates and uses clear, recognizable names. Minor weaknesses exist in that a few items ('Sample efficiency', 'Real-world generalization') are mentioned as challenges rather than topics themselves, though they could reasonably be considered topics worth extracting. Overall, the solution demonstrates thorough topic extraction with excellent adherence to requirements."
+  },
+  {
+    "output": "```json\n[\n  \"Artificial intelligence existential risks\",\n  \"AI applications in healthcare diagnostics\",\n  \"Drug discovery\",\n  \"AI regulation\",\n  \"Innovation in AI\",\n  \"Governance frameworks for AI\",\n  \"Algorithmic bias\",\n  \"Data privacy violations\",\n  \"Machine learning models\",\n  \"Computational resources\",\n  \"Neural networks\",\n  \"Pattern recognition\",\n  \"Ethical considerations in AI\",\n  \"AI deployment ethics\",\n  \"Interdisciplinary collaboration\",\n  \"Computer science\",\n  \"Philosophy of AI\",\n  \"AI policy and policymaking\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "While some researchers argue that artificial intelligence poses existential risks to humanity, others contend that such concerns are largely overblown and distract from immediate applications in healthcare diagnostics and drug discovery. Critics of AI regulation claim that excessive oversight will stifle innovation, yet proponents counter that without proper governance frameworks, algorithmic bias and data privacy violations will proliferate unchecked. Despite these disagreements, there is consensus that machine learning models require substantial computational resources, that neural networks excel at pattern recognition tasks, and that ethical considerations in AI deployment demand interdisciplinary collaboration between computer scientists, philosophers, and policymakers."
+      },
+      "solution_criteria": [
+        "Extracted topics represent actual subjects discussed, not argumentative positions or viewpoints",
+        "Topics are relevant and distinct from one another",
+        "Output is a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage containing negation or contrasting viewpoints to verify topics aren't influenced by argumentative framing"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. However, it has deficiencies in the secondary criteria. The extraction includes some redundancy (two nearly identical entries about AI ethics) and conflates disciplines with actual topics discussed. Additionally, 'Innovation in AI' leans toward capturing an argumentative position rather than a neutral subject matter. The solution is comprehensive but could be more precise in distinguishing between actual topics and the frameworks/disciplines used to discuss them."
+  },
+  {
+    "output": "```json\n[\n  \"Memory consolidation\",\n  \"Hippocampus\",\n  \"Neurobiological mechanisms\",\n  \"Sleep\",\n  \"Neural oscillation\",\n  \"REM sleep\",\n  \"Declarative memory retention\",\n  \"Sleep deprivation\",\n  \"Synaptic plasticity\",\n  \"Alzheimer's disease pathology\",\n  \"Aging populations\",\n  \"International collaboration\",\n  \"Neuroscience research\",\n  \"Cognitive neuroscience\",\n  \"Brain function\",\n  \"Sleep physiology\",\n  \"Memory retention mechanisms\",\n  \"Neurological interventions\",\n  \"Gerontology\",\n  \"Clinical research methodology\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "In a landmark study conducted at the University of Cambridge, Dr. Elena Rossi and her colleagues examined the neurobiological mechanisms of memory consolidation in the hippocampus during sleep. Their research, spanning three years across laboratories in Oxford, Cambridge, and the Max Planck Institute in Munich, revealed that specific patterns of neural oscillation during REM sleep correlate with improved declarative memory retention. Professor James Chen from Stanford University subsequently replicated these findings in a cohort study involving 500 participants from the San Francisco Bay Area, confirming that sleep deprivation significantly impairs the synaptic plasticity mechanisms identified by Rossi's team. The implications for understanding Alzheimer's disease pathology and potential interventions in aging populations across Europe and North America have prompted international collaboration frameworks."
+      },
+      "solution_criteria": [
+        "Extracted topics should focus on scientific concepts and research areas, not proper nouns (researcher names, institutions, or geographic locations)",
+        "All major research themes and subject areas mentioned in the passage should be included",
+        "Output must be a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage containing topic-related proper nouns (researcher names, institution names, geographic locations)"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics without extra commentary, and excludes proper nouns as required. It successfully identifies most major research themes from the passage (memory consolidation, hippocampus, REM sleep, declarative memory, sleep deprivation, synaptic plasticity, Alzheimer's disease, aging populations, international collaboration). However, it includes several topics that are inferred or extrapolated rather than directly extracted from the text (Gerontology, Clinical research methodology, Brain function, Neuroscience research, Cognitive neuroscience). The task asks to 'extract topics' which implies identifying concepts present in the passage rather than inferring related fields. Additionally, there is minor redundancy between related concepts. Despite these secondary criterion issues, the solution does not violate any mandatory requirements."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"NLRP3 inflammasome\",\n  \"Inflammasome activation\",\n  \"IL-1\u03b2 secretion\",\n  \"Lipopolysaccharide priming\",\n  \"Macrophage immunology\",\n  \"Gene knockout technology\",\n  \"THP-1 cells\",\n  \"Co-immunoprecipitation assays\",\n  \"Confocal microscopy\",\n  \"Quantitative reverse transcription PCR\",\n  \"ELISA measurements\",\n  \"Pro-inflammatory cytokine production\",\n  \"Patch-clamp electrophysiology\",\n  \"Potassium efflux\",\n  \"Inflammasome priming\",\n  \"Mass spectrometry-based proteomics\",\n  \"ASC-interacting proteins\",\n  \"Protein-protein interactions\",\n  \"NLRP3 inactivation\",\n  \"Therapeutic gene editing\",\n  \"Pathological inflammation\",\n  \"Sepsis treatment\",\n  \"Autoinflammatory disorders\",\n  \"Immunological therapy\",\n  \"Innate immunity regulation\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study investigates the role of CRISPR-Cas9 mediated gene editing in modulating NLRP3 inflammasome activation and subsequent IL-1\u03b2 secretion in lipopolysaccharide-primed macrophages. We employed clustered regularly interspaced short palindromic repeats technology to generate NLRP3-knockout THP-1 cells and assessed inflammasome assembly through co-immunoprecipitation assays and confocal microscopy. Quantitative reverse transcription PCR and ELISA measurements demonstrated a 78% reduction in pro-inflammatory cytokine production following NLRP3 disruption. Additionally, we utilized patch-clamp electrophysiology to characterize K+ efflux-mediated inflammasome priming and employed mass spectrometry-based proteomics to identify novel ASC-interacting proteins. Our findings suggest that targeted NLRP3 inactivation represents a promising therapeutic strategy for attenuating pathological inflammation in sepsis and autoinflammatory disorders."
+      },
+      "solution_criteria": [
+        "Extracts all major technical topics and methodologies mentioned (e.g., CRISPR-Cas9, NLRP3, inflammasome, gene editing, immunological techniques)",
+        "Identifies disease/clinical contexts referenced (e.g., sepsis, autoinflammatory disorders)",
+        "Returns output as a valid JSON array of strings with no additional formatting or explanation"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a scientific abstract heavy in domain-specific jargon and technical terminology"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics, with no extra commentary, and nothing but the JSON array is provided. It successfully extracts major technical topics, methodologies, and clinical contexts from the passage. However, it includes a few topics that are inferred rather than directly mentioned (approximately 3 out of 26 items), which slightly exceeds the scope of pure extraction. The redundancy between related topics is minor and reflects the interconnected nature of the concepts. Overall, the solution demonstrates strong comprehension and coverage of the source material with only minor issues in scope precision."
+  }
+]

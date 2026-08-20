@@ -1,0 +1,122 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "Kant's categorical imperative represents a pivotal departure from consequentialist ethical frameworks, establishing morality as grounded in rational duty rather than outcomes. This deontological approach emerged during the Enlightenment, challenging the utilitarian calculus that dominated eighteenth-century thought. The tension between Kantian universalism and Hegelian dialectics subsequently shaped nineteenth-century German idealism, influencing Marx's historical materialism and later phenomenological traditions. Contemporary scholars debate whether Kant's noumenal realm\u2014the thing-in-itself beyond human perception\u2014can be reconciled with post-Kantian epistemologies that reject the subject-object dichotomy, particularly in light of developments in quantum mechanics and constructivist philosophy of science."
+    },
+    "solution_criteria": [
+      "Output is a valid JSON array of strings",
+      "Includes all major philosophical concepts, historical periods, and philosophical movements mentioned in the passage",
+      "Topics are extracted as discrete, recognizable concepts rather than full phrases"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a humanities passage containing abstract philosophical concepts and historical references"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in Natural Language Processing (NLP) have been driven by transformer architectures, particularly following the introduction of BERT (Bidirectional Encoder Representations from Transformers) and GPT (Generative Pre-trained Transformer) models. These developments have significantly impacted Machine Learning (ML) applications across multiple domains. The self-attention mechanism, a core component of transformer models, enables efficient processing of sequential data. Furthermore, transfer learning approaches using pre-trained language models have reduced computational requirements for downstream tasks in Named Entity Recognition (NER), sentiment analysis, and machine translation. Recent benchmarks show that fine-tuned BERT variants outperform traditional feature-engineering approaches by 15-20% on standard evaluation metrics used in NLP research communities."
+    },
+    "solution_criteria": [
+      "Correctly identifies all major topics including both full terms and their acronyms (e.g., Natural Language Processing/NLP, BERT, GPT, Machine Learning/ML, Named Entity Recognition/NER)",
+      "Distinguishes between distinct topics rather than treating acronyms and their expansions as separate topics",
+      "Includes technical concepts and methodologies mentioned (e.g., transformer architectures, self-attention mechanism, transfer learning, fine-tuning)"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing acronyms and abbreviations to verify proper topic identification"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study examines the intersection of machine learning and natural language processing in biomedical text mining. We developed a deep learning architecture combining convolutional neural networks with transformer-based models to extract clinical entities from electronic health records. Our approach addresses key challenges in medical NLP including named entity recognition, relationship extraction between drugs and adverse events, and the disambiguation of medical terminology across different clinical domains. The model achieved 94% F1-score on entity recognition tasks while simultaneously improving drug-drug interaction detection through transfer learning from pre-trained language models."
+    },
+    "solution_criteria": [
+      "Extracts topics at appropriate granularity, distinguishing between distinct topics (e.g., machine learning, natural language processing, biomedical text mining) while recognizing when nested concepts should be separated (e.g., neural networks as distinct from transformers, named entity recognition as distinct from relationship extraction)",
+      "Includes all major topics covered in the passage without omission",
+      "Returns output as a valid JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a short passage containing overlapping or nested topics to evaluate topic granularity"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in neuroimaging have revealed that chronic stress exposure triggers sustained elevation of cortisol levels, which correlates with reduced hippocampal volume and impaired memory consolidation during sleep. These findings suggest a mechanistic link between psychological stressors and cognitive decline, particularly in aging populations where the hypothalamic-pituitary-adrenal axis shows diminished negative feedback regulation. Furthermore, longitudinal studies demonstrate that individuals engaging in mindfulness-based interventions show normalized cortisol rhythms and improved performance on executive function tasks, indicating potential therapeutic applications for stress-related cognitive disorders."
+    },
+    "solution_criteria": [
+      "Extracts both explicit topics (stress, cortisol, neuroimaging, hippocampus, memory, sleep) and implied topics requiring inference (aging-related cognitive decline, therapeutic interventions, HPA axis dysfunction)",
+      "Returns results as a JSON array of strings",
+      "Includes at least 8 distinct topics covering the biological mechanisms, clinical implications, and intervention approaches discussed"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implied topics that require inference beyond explicit keywords"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The intersection of bioethics and environmental policy has become increasingly critical in addressing climate-related health disparities. Recent studies demonstrate that communities with limited access to green infrastructure face disproportionate exposure to air pollution, exacerbating respiratory diseases and cardiovascular conditions. Simultaneously, ethical frameworks governing resource allocation must balance immediate public health interventions with long-term ecosystem preservation. Policy makers increasingly recognize that environmental justice requires integrating indigenous knowledge systems with scientific evidence, while regulatory agencies struggle to implement carbon pricing mechanisms that account for differential economic impacts across socioeconomic strata. Furthermore, the ethical implications of geoengineering technologies raise questions about intergenerational responsibility and informed consent when interventions affect global populations."
+    },
+    "solution_criteria": [
+      "Extracts all major topics spanning bioethics, environmental policy, public health, and justice dimensions",
+      "Returns output as a JSON array of strings with no additional formatting or explanations",
+      "Identifies both explicit topics (e.g., air pollution, carbon pricing) and implicit conceptual themes (e.g., environmental justice, intergenerational responsibility)"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with an interdisciplinary passage that spans multiple fields (e.g., bioethics, environmental policy)"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the role of CRISPR-Cas9 mediated gene editing in modulating NLRP3 inflammasome activation and subsequent IL-1\u03b2 secretion in lipopolysaccharide-primed macrophages. We employed clustered regularly interspaced short palindromic repeats technology to generate NLRP3-knockout THP-1 cells and assessed inflammasome assembly through co-immunoprecipitation assays and confocal microscopy. Quantitative reverse transcription PCR and ELISA measurements demonstrated a 78% reduction in pro-inflammatory cytokine production following NLRP3 disruption. Additionally, we utilized patch-clamp electrophysiology to characterize K+ efflux-mediated inflammasome priming and employed mass spectrometry-based proteomics to identify novel ASC-interacting proteins. Our findings suggest that targeted NLRP3 inactivation represents a promising therapeutic strategy for attenuating pathological inflammation in sepsis and autoinflammatory disorders."
+    },
+    "solution_criteria": [
+      "Extracts all major technical topics and methodologies mentioned (e.g., CRISPR-Cas9, NLRP3, inflammasome, gene editing, immunological techniques)",
+      "Identifies disease/clinical contexts referenced (e.g., sepsis, autoinflammatory disorders)",
+      "Returns output as a valid JSON array of strings with no additional formatting or explanation"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a scientific abstract heavy in domain-specific jargon and technical terminology"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in machine learning have improved image classification accuracy. Neural networks now achieve 98% precision on benchmark datasets."
+    },
+    "solution_criteria": [
+      "Output is a valid JSON array of strings",
+      "All distinct topics from the passage are extracted",
+      "No extraneous or inferred topics are included"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a brief, sparse passage with minimal information to assess performance on limited input"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in machine learning have catalyzed significant progress across multiple domains. Natural language processing models utilizing transformer architectures have achieved state-of-the-art performance in sentiment analysis and machine translation tasks, while simultaneously enabling new applications in biomedical text mining for drug discovery. Parallel developments in computer vision, particularly convolutional neural networks for image segmentation, have revolutionized medical imaging diagnostics and autonomous vehicle perception systems. Furthermore, reinforcement learning techniques have demonstrated remarkable success in robotic control and game-playing agents, though challenges remain in sample efficiency and real-world generalization. These interconnected subfields share common theoretical foundations in deep learning optimization and feature representation learning."
+    },
+    "solution_criteria": [
+      "Extracts all major topics and subtopics mentioned in the passage (e.g., machine learning, natural language processing, computer vision, reinforcement learning, and their specific applications)",
+      "Returns output as a valid JSON array of strings",
+      "Avoids duplicate entries and maintains clarity by using concise, recognizable topic names"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a dense passage from a literature review containing multiple subtopics in limited text"
+  },
+  {
+    "prompt_inputs": {
+      "content": "While some researchers argue that artificial intelligence poses existential risks to humanity, others contend that such concerns are largely overblown and distract from immediate applications in healthcare diagnostics and drug discovery. Critics of AI regulation claim that excessive oversight will stifle innovation, yet proponents counter that without proper governance frameworks, algorithmic bias and data privacy violations will proliferate unchecked. Despite these disagreements, there is consensus that machine learning models require substantial computational resources, that neural networks excel at pattern recognition tasks, and that ethical considerations in AI deployment demand interdisciplinary collaboration between computer scientists, philosophers, and policymakers."
+    },
+    "solution_criteria": [
+      "Extracted topics represent actual subjects discussed, not argumentative positions or viewpoints",
+      "Topics are relevant and distinct from one another",
+      "Output is a valid JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing negation or contrasting viewpoints to verify topics aren't influenced by argumentative framing"
+  },
+  {
+    "prompt_inputs": {
+      "content": "In a landmark study conducted at the University of Cambridge, Dr. Elena Rossi and her colleagues examined the neurobiological mechanisms of memory consolidation in the hippocampus during sleep. Their research, spanning three years across laboratories in Oxford, Cambridge, and the Max Planck Institute in Munich, revealed that specific patterns of neural oscillation during REM sleep correlate with improved declarative memory retention. Professor James Chen from Stanford University subsequently replicated these findings in a cohort study involving 500 participants from the San Francisco Bay Area, confirming that sleep deprivation significantly impairs the synaptic plasticity mechanisms identified by Rossi's team. The implications for understanding Alzheimer's disease pathology and potential interventions in aging populations across Europe and North America have prompted international collaboration frameworks."
+    },
+    "solution_criteria": [
+      "Extracted topics should focus on scientific concepts and research areas, not proper nouns (researcher names, institutions, or geographic locations)",
+      "All major research themes and subject areas mentioned in the passage should be included",
+      "Output must be a valid JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing topic-related proper nouns (researcher names, institution names, geographic locations)"
+  }
+]

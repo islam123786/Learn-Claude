@@ -1,0 +1,161 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "168",
+      "weight": "72",
+      "goal": "maintenance with blood pressure management",
+      "dietary restrictions": "low-sodium diet (less than 1,500mg sodium per day) due to hypertension"
+    },
+    "solution_criteria": [
+      "Meal plan covers breakfast, lunch, dinner, and one snack",
+      "All meals comply with low-sodium requirement (total daily sodium under 1,500mg)",
+      "Plan is appropriate for an elderly individual with realistic portion sizes",
+      "Meals are simple, practical, and concise (no more than 3-4 ingredients per dish)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with an elderly person on a low-sodium diet due to hypertension"
+  },
+  {
+    "prompt_inputs": {
+      "height": "188 cm",
+      "weight": "85 kg",
+      "goal": "muscle gain with high performance training",
+      "dietary restrictions": "none"
+    },
+    "solution_criteria": [
+      "Total daily calories are 3000 or more",
+      "Macronutrient ratio supports muscle gain (40% protein, 40% carbs, 20% fat minimum)",
+      "Meal plan includes 4-5 distinct meals/snacks distributed throughout the day",
+      "All meals are realistic, compact, and actionable within a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a high-performance athlete requiring 3000+ calories with specific macronutrient ratios"
+  },
+  {
+    "prompt_inputs": {
+      "height": "168",
+      "weight": "65",
+      "goal": "maintenance",
+      "dietary restrictions": "vegan, gluten-free, quick meal prep preferred"
+    },
+    "solution_criteria": [
+      "All meals are vegan and gluten-free",
+      "Meal plan covers breakfast, lunch, and dinner for one day",
+      "Each meal requires 15 minutes or less to prepare",
+      "Appropriate caloric intake for maintenance at given height and weight"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a vegan individual who has a gluten allergy and prefers quick meal prep"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175 cm",
+      "weight": "78 kg",
+      "goal": "maintenance with balanced nutrition",
+      "dietary restrictions": "gluten-free, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals (breakfast, lunch, dinner) for one day",
+      "All meals use pre-prepared or minimal-cooking ingredients (e.g., rotisserie chicken, canned beans, pre-cut vegetables)",
+      "Total daily meals comply with stated dietary restrictions",
+      "Plan is concise and formatted for quick reference"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a busy professional who wants minimal cooking time and uses mostly pre-prepared ingredients"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175 cm",
+      "weight": "70 kg",
+      "goal": "maintenance",
+      "dietary restrictions": "vegetarian, no access to oven or stove (microwave and hot plate only)"
+    },
+    "solution_criteria": [
+      "Meal plan covers 3 meals within a single day",
+      "All meals are vegetarian and preparable with microwave or hot plate only",
+      "Plan is budget-friendly with affordable, shelf-stable or minimal refrigeration ingredients",
+      "Meals are compact and concise (brief descriptions, no lengthy recipes)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a college student on a tight budget with limited kitchen access"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172",
+      "weight": "68",
+      "goal": "maintenance",
+      "dietary restrictions": "pescatarian, no mushrooms, shellfish allergy"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 3 meals (breakfast, lunch, dinner) for one day",
+      "All meals are pescatarian-compliant with no meat or poultry",
+      "No mushrooms or shellfish included in any meal",
+      "Plan is concise and practical to prepare"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a pescatarian who dislikes mushrooms and has a shellfish allergy"
+  },
+  {
+    "prompt_inputs": {
+      "height": "168 cm",
+      "weight": "72 kg",
+      "goal": "maintenance with balanced nutrition for family",
+      "dietary restrictions": "no nuts (child allergy), prefer whole grains"
+    },
+    "solution_criteria": [
+      "Meal plan includes breakfast, lunch, and dinner that are kid-friendly and nutritionally balanced for adults",
+      "All meals accommodate the nut allergy restriction",
+      "Plan is compact and concise (fits on one page or brief format)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a parent of young children needing kid-friendly meals that are also nutritious for adults"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175 cm",
+      "weight": "82 kg",
+      "goal": "weight loss",
+      "dietary restrictions": "vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan respects 16:8 intermittent fasting with exactly two eating windows",
+      "All meals are vegetarian and nut-free",
+      "Plan is compact and concise (suitable for 1 day reference)",
+      "Meals support weight loss goal with appropriate portion guidance"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with someone following intermittent fasting (16:8 protocol) with two eating windows"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175 cm",
+      "weight": "92 kg",
+      "goal": "blood sugar management and weight loss",
+      "dietary restrictions": "no refined sugars, low glycemic index preferred, no shellfish allergy"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 3 meals distributed across one day",
+      "Each meal includes protein, healthy fats, and complex carbohydrates in balanced proportions suitable for type 2 diabetes management",
+      "All foods have low to medium glycemic index values to support stable blood sugar levels",
+      "Plan is presented in a compact, easy-to-read format with clear meal times and portion guidance"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with a person managing type 2 diabetes requiring balanced blood sugar control"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172 cm",
+      "weight": "68 kg",
+      "goal": "post-surgery recovery with high protein intake",
+      "dietary restrictions": "soft foods only, no spicy foods, lactose intolerant"
+    },
+    "solution_criteria": [
+      "All meals are soft, easy-to-digest foods suitable for post-surgery recovery",
+      "Meal plan includes high protein content distributed across breakfast, lunch, and dinner",
+      "No spicy foods or lactose-containing products included",
+      "Plan is compact and covers exactly one full day with 3 meals"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an Individual",
+    "scenario": "Testing with someone recovering from surgery requiring soft, easy-to-digest foods with high protein"
+  }
+]
