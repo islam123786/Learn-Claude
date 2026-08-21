@@ -141,6 +141,11 @@ It is the ability to critically evaluate what AI produces, how it produces it an
 
 <img width="485" height="848" alt="image" src="https://github.com/user-attachments/assets/916e75a6-116d-4e92-89bf-3ae8de0303c5" />
 
+## Tool Use
+
+### Tool Use Workflow
+<img width="1490" height="931" alt="image" src="https://github.com/user-attachments/assets/1f2511dd-dfa6-4bb3-ae12-c4e6dabf30d5" />
+
 
 ## RAG and Agentic Search
 <img width="1719" height="830" alt="image" src="https://github.com/user-attachments/assets/52638f8c-483d-4f9b-9476-01d7783d9e2c" />
