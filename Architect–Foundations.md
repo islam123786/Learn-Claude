@@ -151,6 +151,10 @@ It is the ability to critically evaluate what AI produces, how it produces it an
 <img width="1719" height="830" alt="image" src="https://github.com/user-attachments/assets/52638f8c-483d-4f9b-9476-01d7783d9e2c" />
 
 
+## Model Context Protocol
+
+### MCP Flow:
+<img width="1840" height="823" alt="image" src="https://github.com/user-attachments/assets/b45b3f6d-ad47-493d-99c3-7b408d5f61ec" />
 
 
 
